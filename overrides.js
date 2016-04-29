@@ -42,3 +42,7 @@ user_pref('geo.enabled', true);
 // mess websites going against authors' intentions because it'll work as if
 // @font-face didn't exist.
 user_pref('browser.display.use_document_fonts', 1);
+
+// Don't display an error message indicating the entered information is not a valid
+// URL.  Ask the default search engine (hopefully DuckDuckGo).
+user_pref("keyword.enabled", true);
