@@ -36,3 +36,9 @@ user_pref('pdfjs.disabled', false);
 // Enable location-aware browsing.  Firefox should still present a popup
 // requesting authorization before sharing location in a per-site basis.
 user_pref('geo.enabled', true);
+
+// Don't disable fonts from documents.  This actually doesn't prevent system
+// font fingerprinting (only make it harder, but I didn't figure out why), but
+// mess websites going against authors' intentions because it'll work as if
+// @font-face didn't exist.
+user_pref('browser.display.use_document_fonts', 1);
