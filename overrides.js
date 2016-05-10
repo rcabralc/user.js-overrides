@@ -50,4 +50,9 @@ user_pref('browser.display.use_document_fonts', 1);
 // URL.  Ask the default search engine (hopefully DuckDuckGo).
 user_pref("keyword.enabled", true);
 
+// Don't disable WebIDE (needed for development, specially for FF OS)
+user_pref("devtools.webide.enabled", true);
+user_pref("devtools.webide.autoinstallADBHelper", true);
+user_pref("devtools.webide.autoinstallFxdtAdapters", true);
+
 // jshint ignore: end
