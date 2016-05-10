@@ -1,3 +1,6 @@
+// jscs: disable
+// jshint ignore: start
+
 // Don't autostart private browsing.
 user_pref('browser.privatebrowsing.autostart', false);
 
@@ -46,3 +49,5 @@ user_pref('browser.display.use_document_fonts', 1);
 // Don't display an error message indicating the entered information is not a valid
 // URL.  Ask the default search engine (hopefully DuckDuckGo).
 user_pref("keyword.enabled", true);
+
+// jshint ignore: end
